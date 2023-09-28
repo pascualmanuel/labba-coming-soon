@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Satoshi-Light";
+  src: url("./Assets/Satoshi-Light.woff2") format("woff2"),
+    url("./Assets/Satoshi-Light.woff") format("woff"),
+    url("./Assets/Satoshi-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: auto;
+  font-style: normal;
+}
+
+.h1-desk {
+  font-family: "Satoshi-Light";
+  color: var(--Gris-1, #b5b5b5);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 11.28px;
+}
+body {
+  margin: 0;
+}
+.container {
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  opacity: 0.05;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.15),
+      rgba(255, 255, 255, 0.15)
+    ),
+    url("https://uploads-ssl.webflow.com/63bb1f67f1d82961dd42f3d4/643ceae4fba6fac6078bbf16_grain-effect.gif");
+  background-position: 0 0, 50%;
+  background-repeat: repeat, repeat;
+  background-size: auto, auto;
+  background-attachment: scroll, fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+.super-cont {
+  height: 100vh;
+  background: #212121;
+}
+
+.second-section {
+  display: flex;
+  justify-content: center;
+  height: 95vh;
+  align-items: center;
+  margin-top: -100vh;
+  flex-direction: column;
+}
